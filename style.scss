@@ -100,6 +100,8 @@ $frosted-white-color: #fdfdff;
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .bg {
@@ -196,14 +198,49 @@ body {
   background-color: white;
   padding-top: 140px;
   margin-bottom: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 
   &__section {
     display: flex;
     gap: 80px;
+    // justify-content: center;
 
     & > img {
       width: 609px;
       height: 403px;
     }
+  }
+
+  &__text {
+    width: 465px;
+    height: 403px;
+  }
+
+  &__title {
+    margin-top: -10px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: $black-blue-color;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $black-blue-color;
+  }
+  &__subsubtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black-blue-color;
+  }
+  &__subtext {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black-blue-color;
   }
 }
