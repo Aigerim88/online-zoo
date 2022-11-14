@@ -1,0 +1,120 @@
+@import url(./node_modules/normalize.css/normalize.css);
+.bg__btn {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+
+.bg__btn:hover {
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+  background: #e47209;
+}
+
+.bg__btn:visited {
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+  background: #767474;
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+
+.bg__btn:active {
+  width: 298px;
+  height: 54px;
+  background: #4b9200;
+  color: white;
+  border: none;
+}
+
+.header__design:active, .header__nav > li > a:active {
+  color: #e47209;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bg {
+  width: 100vw;
+  height: 700px;
+  background-image: url(./assets/Giant\ Panda.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+.bg__circle {
+  width: 465px;
+  height: 465px;
+  background-color: #e47209;
+  border-radius: 50%;
+  margin-left: 800px;
+  margin-top: 12px;
+}
+.bg__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 70px 0 0 70px;
+}
+.bg__word {
+  color: #ffee2e;
+}
+.bg__btn {
+  margin-left: 950px;
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__nav {
+  display: flex;
+  list-style: none;
+  gap: 58px;
+  cursor: pointer;
+}
+.header__design {
+  margin-left: 200px;
+  cursor: pointer;
+}
+.header__logo {
+  width: 72.49px;
+  height: 44.91px;
+  margin-right: 63px;
+  cursor: pointer;
+}
+
+.main {
+  background-color: white;
+  padding-top: 140px;
+  margin-bottom: 180px;
+}
+.main__section {
+  display: flex;
+  gap: 80px;
+}
+.main__section > img {
+  width: 609px;
+  height: 403px;
+}

@@ -1,0 +1,209 @@
+@import url(./node_modules/normalize.css/normalize.css);
+
+// variables
+$green-color: #4b9200;
+$orange-color: #e47209;
+$orange-grad-color: #fed290;
+$pink-grad-color: #febdab;
+$yellow-color: #ffee2e;
+$red-color: #d31414;
+$black-blue-color: #333b41;
+$grey-color: #767474;
+$grey-smoky-color: #ababab;
+$light-grey-color: #f1f3f2;
+$frosted-white-color: #fdfdff;
+
+%default-round-btn {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+%hover-round-btn {
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+  background: $orange-color;
+}
+%clicked-round-btn {
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+  background: $green-color;
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+%disabled-round-btn {
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+  background: $grey-color;
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+
+%default-rect-btn {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  color: white;
+  border: none;
+}
+%hover-rect-btn {
+  width: 298px;
+  height: 54px;
+  background: $orange-color;
+  color: white;
+  border: none;
+}
+%clicked-rect-btn {
+  width: 298px;
+  height: 54px;
+  background: $green-color;
+  color: white;
+  border: none;
+}
+%disabled-rect-btn {
+  width: 298px;
+  height: 54px;
+  background: $grey-color;
+  color: white;
+  border: none;
+}
+
+%email-default {
+  width: 228px;
+  height: 42px;
+  border: 0.7px solid $orange-color;
+  border-radius: 2px;
+}
+%email-active {
+  width: 228px;
+  height: 42px;
+  border: 0.7px solid $green-color;
+  border-radius: 2px;
+}
+%email-mistake {
+  width: 228px;
+  height: 42px;
+  border: 0.7px solid $red-color;
+  border-radius: 2px;
+}
+%active-link {
+  color: $orange-color;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bg {
+  width: 100vw;
+  height: 700px;
+  background-image: url(./assets/Giant\ Panda.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+
+  &__circle {
+    width: 465px;
+    height: 465px;
+    background-color: $orange-color;
+    border-radius: 50%;
+    margin-left: 800px;
+    margin-top: 12px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 70px 0 0 70px;
+  }
+
+  &__word {
+    color: $yellow-color;
+  }
+
+  &__btn {
+    @extend %default-round-btn;
+    margin-left: 950px;
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      @extend %hover-round-btn;
+    }
+    &:active {
+      @extend %clicked-rect-btn;
+    }
+    &:visited {
+      @extend %disabled-round-btn;
+    }
+  }
+}
+
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    gap: 58px;
+    cursor: pointer;
+
+    & > li > a:active {
+      @extend %active-link;
+    }
+  }
+
+  &__design {
+    margin-left: 200px;
+    cursor: pointer;
+    &:active {
+      @extend %active-link;
+    }
+  }
+
+  &__logo {
+    width: 72.49px;
+    height: 44.91px;
+    margin-right: 63px;
+    cursor: pointer;
+  }
+}
+
+.main {
+  background-color: white;
+  padding-top: 140px;
+  margin-bottom: 180px;
+
+  &__section {
+    display: flex;
+    gap: 80px;
+
+    & > img {
+      width: 609px;
+      height: 403px;
+    }
+  }
+}
