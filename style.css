@@ -1,14 +1,16 @@
 @import url(./node_modules/normalize.css/normalize.css);
-.bg__btn {
+.favorite__btn, .bg__btn {
   width: 298px;
   height: 54px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border: none;
   border-radius: 25px;
   color: white;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.bg__btn:hover {
+.favorite__btn:hover, .bg__btn:hover {
   width: 298px;
   height: 54px;
   border-radius: 25px;
@@ -25,7 +27,7 @@
   color: white;
 }
 
-.bg__btn:active {
+.favorite__btn:active, .bg__btn:active {
   width: 298px;
   height: 54px;
   background: #4b9200;
@@ -35,6 +37,38 @@
 
 .header__design:active, .header__nav > li > a:active {
   color: #e47209;
+}
+
+.favorite__toright, .favorite__toleft {
+  width: 62px;
+  height: 62px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+.favorite__toright:active, .favorite__toleft:active {
+  background: #4b9200;
+}
+
+.favorite__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.favorite__subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
 }
 
 body {
@@ -110,7 +144,7 @@ body {
 .main {
   background-color: white;
   padding-top: 140px;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -151,4 +185,44 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #333b41;
+}
+
+.favorite__slider {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.favorite__arrow {
+  color: white;
+}
+.favorite__row1 {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.favorite__row2 {
+  display: flex;
+  gap: 30px;
+}
+.favorite__pic {
+  width: 366px;
+  height: 426px;
+  border: 1px solid #e47209;
+  border-radius: 5px;
+}
+.favorite__pic > img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.favorite__caption {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 16px;
+}
+.favorite__btn {
+  margin: 80px auto 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
